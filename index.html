@@ -1,215 +1,314 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/CSS/style.css">
-    <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
-    <link rel="stylesheet" href="./Assets/CSS/all.css">
-    <link rel="shortcut icon" href="./Assets/Images/Favicon.png" type="image/x-icon">
-    <title>FANoFAN | Manufacturers & Sellers of Quality Fans</title>
-</head>
-<body>
-    <header id="header">
-        <div class="container position-relative">
-            <p class="header-text text-center">Up to 50% discount available on Featured Products</p>
-            <i class="fas fa-times close-icon" id="closebtn" onclick="closeHeader()"></i>
-        </div>
-    </header>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <nav id="nav" class="navbar navbar-expand-md  navbar-light bg-light w-100">
-        <div class="container">
-            <a href="/index.html" class="navbar-brand "><img class="logo" src="./Assets/Images/Logo.png" alt="FAN o FAN"></a>
-            
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./Assets/CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="./Assets/CSS/all.css">
+        <link rel="stylesheet" href="./Assets/CSS/main.css">
+        <link rel="stylesheet" href="./Assets/CSS/style.css">
+        <link rel="shortcut icon" href="./Assets/Images/Favicon.png" type="image/x-icon">
+        <title>FANoFAN | Manufacturers & Sellers of Quality Fans</title>
+    </head>
 
-            <div class="collapse navbar-collapse w-100" id="navbarContent">
-                <ul class="navbar-nav ml-auto navbar-container">
-                    <li class="nav-item"><a href="#" class="nav-link link active-page">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link link">About</a></li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Shop <i class="fas fa-chevron-down"></i>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-container" aria-labelledby="navbarDarkDropdownMenuLink">
-                          <li><a class="dropdown-item" href="#">Ceiling Fans</a></li>
-                          <li><a class="dropdown-item" href="#">Exhaust Fans</a></li>
-                          <li><a class="dropdown-item" href="#">Stand Fans</a></li>
+    <body>
+        
+        <header id="header">
+            <div class="container position-relative">
+                <p class="header-text text-center mb-0">Up to 50% discount available on Featured Products</p>
+                <i class="fas fa-times close-icon" id="closebtn"></i>
+            </div>
+        </header>
+        <nav id="navbar" class="navbar navbar-expand-md  navbar-light bg-light w-100">
+            <div class="container">
+                <a href="/index.html" class="navbar-brand "><img class="logo" src="./Assets/Images/Logo.png"
+                        alt="FAN o FAN"></a>
+
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse w-100" id="navbarContent">
+                    <ul class="navbar-nav ml-auto navbar-container">
+                        <li class="nav-item"><a href="index.html" class="nav-link active-page">Home</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link ">Corporate</a></li>
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">Products</button>
+                                <div class="dropdown-content">
+                                <a class="drop-link" href="#">Ceiling Fans</a>
+                                <a class="drop-link" href="#">TCP & Table Fans</a>
+                                <a class="drop-link" href="#">Exhaust Fans</a>
+                                <a class="drop-link" href="#">Pedestal Fans</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link link">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="showcase">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col col-md-5 col-lg-5 showcase-left">
+                        <div class="container showcase-left-container">
+                            <div class="showcase-text-container">
+                                <h1 class="showcase-text">15% Off For <br> New Members</h1>
+                            </div>
+                            <button class="btn showcase-btn">Start Shopping</button>
+                        </div>
+                    </div>
+                    <div class="col col-md-7 col-lg-7 showcase-img-container">
+                        <img src="./Assets/Images/Showcase Image.jpg" alt="" class="showcase-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Featured Products Section -->
+        
+        <section id="featured-products">
+            <h1 class="featured-products-heading text-center my-5">Our Featured Products</h1>
+            <div class="container products-container">
+                <div class="product-main-container">
+                    <div class="product product-1">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/1.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Crystal Antique</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 7,930</del> PKR 6,625</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/2.png" alt='Classic 12" / 14"' class="product-image" onmouseover="imgChange('./Assets/Images/Featured Products/LouverFanPedestal3_350X')">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/3.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/4.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/5.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/6.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/7.jpg" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Product Images/8.jpg" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div class="product-main-container">
+                    <div class="product">
+                        <div class="product-head">
+                            <img src="./Assets/Images/Ceiling Fans/7.png" alt='Classic 12" / 14"'
+                                class="product-image">
+                            <div class="featured">Featured</div>
+                        </div>
+                        <div class="product-body">
+                            <h1 class="product-title">Classic 12" / 14"</h1>
+                            <hr>
+                            <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                        </div>
+                        <div class="strip"></div>
+                    </div>
+                    <button class="buy-btn w-100">Buy Now</button>
+                </div>
+                <div id="hidden-products">
+                    <div class="product-main-container">
+                        <div class="product">
+                            <div class="product-head">
+                                <img src="./Assets/Images/Ceiling Fans/8.png" alt='Classic 12" / 14"'
+                                    class="product-image">
+                                <div class="featured">Featured</div>
+                            </div>
+                            <div class="product-body">
+                                <h1 class="product-title">Classic 12" / 14"</h1>
+                                <hr>
+                                <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                            </div>
+                            <div class="strip"></div>
+                        </div>
+                        <button class="buy-btn w-100">Buy Now</button>
+                    </div>
+                    <div class="product-main-container">
+                        <div class="product">
+                            <div class="product-head">
+                                <img src="./Assets/Images/Ceiling Fans/3.png" alt='Classic 12" / 14"'
+                                    class="product-image">
+                                <div class="featured">Featured</div>
+                            </div>
+                            <div class="product-body">
+                                <h1 class="product-title">Classic 12" / 14"</h1>
+                                <hr>
+                                <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                            </div>
+                            <div class="strip"></div>
+                        </div>
+                        <button class="buy-btn w-100">Buy Now</button>
+                    </div>
+                    <div class="product-main-container">
+                        <div class="product">
+                            <div class="product-head">
+                                <img src="./Assets/Images/Ceiling Fans/10.png" alt='Classic 12" / 14"'
+                                    class="product-image">
+                                <div class="featured">Featured</div>
+                            </div>
+                            <div class="product-body">
+                                <h1 class="product-title">Classic 12" / 14"</h1>
+                                <hr>
+                                <h1 class="product-price"><del>PKR 3,930</del> PKR 3,800</h1>
+                            </div>
+                            <div class="strip"></div>
+                        </div>
+                        <button class="buy-btn w-100">Buy Now</button>
+                    </div>
+                </div>
+                <button id="load-more" class="btn">Load More</button>
+        </section>
+
+        <section id="sitemap">
+            <div class="container ">
+                <div class="row">
+                    <div class="col main-pages">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link">Corporate</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
                         </ul>
-                      </li>
-                    <li class="nav-item"><a href="#" class="nav-link link">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section id="showcase">
-        <div class="container">
-            <div class="row">
-                <div class="col col-md-5 col-lg-5 showcase-left">
-                    <div class="container showcase-left-container" >
-                        <p class="showcase-text">15% Off For <br> New Members</p>
-                        <button class="btn showcase-btn">Start Shopping</button>
+
                     </div>
-                </div>
-                <div class="col col-md-7 col-lg-7 showcase-img-container">
-                    <img src="./Assets/Images/Home Page Showcase.png" alt="" class="showcase-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Products Section -->
-
-    <section id="featured-products">
-        <h1 class="featured-products-heading text-center my-5">Our Featured Products</h1>
-        <div class="container featured-products-container">
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/LouverFanPedestal3_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/Majestic_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/TCP_TABLE2_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/LouverFanPedestal3_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/Majestic_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/TCP_TABLE2_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/LouverFanPedestal3_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/Majestic_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-            <div class="product">
-                <div class="product-img-container">
-                <img class="product-img" src="./Assets/Images/Featured products/TCP_TABLE2_350X-removebg-preview.png" alt="Fetured Products">    
-                </div>
-                
-                <div class="featured">Featured</div>
-                <div class="product-body">
-                    <div class="price">Rs: 3500</div>
-                    <div class="title">Royal Louver Pedestal Fan</div>
-                </div>
-            </div>
-        </div>
-        <div class="btn-container text-center">
-            <button class="btn load-more" id="load-more">Load More</button>
-        </div>
-    </section>
-
-    <section id="sitemap">
-        <div class="container ">
-            <div class="row">
-                <div class="col main-pages">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col product-pages">
-                    <ul class="navbar-nav">
-                        <li class="nav-item"><a href="#" class="nav-link">Ceiling Fans</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Exhaust Fans</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link">Stand Fans</a></li>
-                    </ul>
-                </div>
-                <div class="col"></div>
-                <div class="col follow-links">
-                    <p class="follow-text">Follow Us on:</p>
-                    <div class="follow-icons-container">
-                        <i class="fab fa-facebook follow-icon facebook"></i>
-                        <i class="fab fa-github follow-icon github"></i>
-                        <i class="fab fa-linkedin follow-icon linkedin"></i>
+                    <div class="col product-pages">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="#" class="nav-link">Ceiling Fans</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Exhaust Fans</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Stand Fans</a></li>
+                        </ul>
+                    </div>
+                    <div class="col"></div>
+                    <div class="col follow-links">
+                        <p class="follow-text">Follow Us on:</p>
+                        <div class="follow-icons-container">
+                            <i class="fab fa-facebook follow-icon facebook"></i>
+                            <i class="fab fa-github follow-icon github"></i>
+                            <i class="fab fa-linkedin follow-icon linkedin"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p class="text-center">&copy; - 2021 - Designed By Muhammad Hammad Yousuf, Prisicla Farhan & Amna Ramzan</p>
-    </footer>
+        <footer>
+            <p class="text-center mb-0">&copy; Copyright 2021 - Designed By Muhammad Hammad Yousuf, Prisicla Farhan & Amna
+                Ramzan
+            </p>
+        </footer>
+        <script src="./Assets/JS/Jquerry-3.6.0.js"></script>
+        <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
+        <script src="./Assets/JS/all.js"></script>
+        <script src="./Assets/JS/Script.js"></script>
+    </body>
 
-    <script src="./Assets/JS/bootstrap.bundle.min.js"></script>
-    <script src="./Assets/JS/all.js"></script>
-    <script src="./Assets/JS/Script.js"></script>
-</body>
-</html>
+    </html>
