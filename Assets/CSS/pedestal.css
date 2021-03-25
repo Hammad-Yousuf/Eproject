@@ -27,11 +27,11 @@
 }
 
 .product-main-container{
-    margin-bottom: 30px;
     cursor: pointer;
     transform: scale(1 ,1);
     transition: all 250ms ease-in-out;
     margin: 0 auto;
+    margin-bottom: 30px;
 }
 
 .product{
