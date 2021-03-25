@@ -1,0 +1,8 @@
+#error{
+    height: 60vh;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color: var(--orange-color);
+}

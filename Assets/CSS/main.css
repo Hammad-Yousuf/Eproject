@@ -1,0 +1,242 @@
+:root {
+  scroll-behavior: smooth !important;
+  --orange-color: #f27649;
+  --blackish-color: #242424;
+  --bg-color: #d7d7d7;
+
+  /* Font Famyily */
+
+  --font-family: arial, halvetica, san-serif;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Navbar */
+#navbar {
+  background: var(--blackish-color) !important;
+  min-height: 10vh;
+}
+
+.logo {
+  width: 30vh;
+}
+
+#navbar ul {
+  margin-left: auto;
+}
+
+#navbar ul li {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 10px;
+}
+
+#navbar ul li a {
+  text-align: left;
+  color: var(--orange-color) ;
+  position: relative;
+  margin: 0 10px;
+  height: 100%;
+}
+
+#navbar ul li a:hover {
+  color: #bb3200 ;
+}
+
+.active-page::after {
+  content: "";
+  width: 100%;
+  height: 5px;
+  background: var(--orange-color);
+  position: absolute;
+
+  bottom: -19px;
+  display: block;
+  transition: width 250ms ease-in-out;
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .active-page::after {
+    display: none;
+  }
+}
+/* Dropdown Button */
+.dropbtn {
+  background: var(--blackish-color);
+  color: var(--orange-color);
+  padding: inherit inherit;
+  border: none;
+}
+.dropbtn:hover{
+    color: #bb3200 !important;
+
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  z-index: 9999;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin: 0 4px;
+  padding: 8px 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  width: 100%;
+  position: absolute;
+  background-color: var(--blackish-color);
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  transform: rotateX(-90deg);
+  transition: transform 500ms ease-in-out;
+  transform-origin: top;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a.drop-link {
+  width: 100%;
+  margin: 0;
+  background: var(--orange-color);
+  color: var(--blackish-color) !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 150ms ease-in-out, color 250ms ease-in-out;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: var(--orange-color) !important;
+  text-decoration: none !important;
+  background-color: var(--blackish-color);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  transform: rotateX(0deg);
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: var(--orange-color);
+  transition: all 0.25s !important;
+}
+/* Breadcrumb */
+
+.breadcrumb>li>a{
+  color: var(--orange-color);
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+.breadcrumb>li.active{
+  color: var(--blackish-color) !important;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "↠";
+  color: var(--orange-color);
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+/* Pagination */
+
+.pagination-link{
+  background: var(--orange-color) !important;
+  color: var(--blackish-color) !important;
+}
+
+.pagination-link:hover{
+  background: var(--blackish-color) !important;
+  color: var(--orange-color) !important;
+}
+
+.active-pagination{
+  background: var(--blackish-color) !important;
+  color: var(--orange-color) !important;
+}
+
+/* Sitemap Section */
+
+#sitemap {
+  width: 100%;
+  min-height: 35vh;
+  background: var(--blackish-color);
+  color: var(--orange-color);
+  display: grid;
+  place-items: center;
+  padding: 2rem 0;
+}
+
+
+.main-footer-container{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+  padding: 0 3rem;
+}
+
+.col ul li a {
+    min-width: 18vh;
+  color: var(--orange-color) !important;
+  font-weight: 400;
+  position: relative;
+  transition: all 250ms ease-in-out;
+}
+
+.col ul li a:hover {
+  text-decoration: underline;
+}
+
+.follow-links {
+  padding: 0 3rem;
+}
+
+@media(max-width: 768px){
+  .follow-links{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.follow-icon {
+  font-size: 2rem;
+  transition: color 250ms ease-in-out;
+}
+
+.facebook:hover {
+  color: rgb(89, 131, 247);
+  cursor: pointer;
+}
+
+.github:hover {
+  color: rgb(27, 27, 27);
+  cursor: pointer;
+}
+
+.linkedin:hover {
+  color: rgb(7, 7, 70);
+  cursor: pointer;
+}
+
+/* Footer Section*/
+
+footer {
+  display: grid;
+  place-items: center;
+  background: var(--orange-color);
+  padding: 1rem 0;
+}
+
+footer > p {
+  font-weight: 400;
+  color: var(--blackish-color);
+}
+button a{
+  text-decoration: none;
+  color: inherit;
+}

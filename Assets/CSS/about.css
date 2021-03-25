@@ -1,0 +1,40 @@
+#about{
+    background: var(--orange-color);
+}
+.about-container{
+    padding: 3rem 2rem;
+    background: #fff;
+    margin: 0 auto !important;
+}
+h1{
+    color: var(--blackish-color);
+    text-decoration: underline var(--orange-color);
+    font-size: 3rem;
+    margin-bottom: 10vh;
+}
+#about  div{
+    margin-bottom: 5vh;
+}
+h2,h3{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: var(--blackish-color);
+    text-decoration: underline var(--orange-color);
+
+}
+#about p{
+    max-width: 150ch;
+    margin-bottom: 0;
+}
+.company-name{
+    text-decoration: none;
+    color: var(--orange-color);
+    font-size: 1.2rem;
+}
+.company-name::after{
+    content: ' ';
+    white-space: pre;
+}
+.company-name:hover{
+    color: var(--blackish-color);
+}

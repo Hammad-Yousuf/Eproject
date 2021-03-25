@@ -1,0 +1,29 @@
+.product-main-head{
+    width: 100%;
+    min-height: 30vh;
+    background: rgb(0, 37, 78);
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+.facilities-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 10vh 0;
+}
+.facility{
+    width: 20rem;
+    height: 70vh;
+    overflow: hidden;  
+    border: 1px solid gray;  
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.facility-img{
+    width: 100%;
+    height: 50vh;
+}
