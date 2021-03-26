@@ -6,3 +6,6 @@
 h1{
     color: var(--orange-color);
 }
+h1 .error-icon{
+    font-size: 7rem;
+}

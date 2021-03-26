@@ -157,7 +157,9 @@ body{
   background: var(--blackish-color) !important;
   color: var(--orange-color) !important;
 }
-
+.buy-btn:hover a{
+  color: #fff !important;
+}
 /* Sitemap Section */
 
 #sitemap {
